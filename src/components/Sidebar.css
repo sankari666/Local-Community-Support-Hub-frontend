@@ -1,0 +1,27 @@
+.sidebar {
+    background-color: #38d9a9;
+    padding: 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    height: 100vh;
+  }
+  
+  .sidebar button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar button:hover {
+    background-color: #2fb897;
+    border-radius: 8px;
+  }
+  
