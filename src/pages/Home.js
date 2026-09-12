@@ -1,32 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 const CommunityPage = () => {
-  const [posts, setPosts] = useState([
-    { name: "Alice", message: "Excited for the upcoming community event!" },
-    { name: "Bob", message: "Does anyone have a ladder I can borrow?" },
-  ]);
-  const [newMessage, setNewMessage] = useState("");
-
-  const addPost = (message) => {
-    const newPost = {
-      name: "You", // Placeholder, you can link it to logged-in user's name
-      message: message,
-    };
-    setPosts([newPost, ...posts]);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (newMessage.trim()) {
-      addPost(newMessage);
-      setNewMessage("");
-    }
-  };
-
   return (
     <div className="page-content">
       {/* Home Part */}
-      <h3 className="welcome">Welcome User! Explore Community Resources below</h3>
+      <h3 className="welcome">
+        Welcome User! Explore Community Resources below
+      </h3>
+
       <ul>
         <li><strong>1. To begin, create an account or log in using your email address...</strong></li>
         <li><strong>2. Browse through available resources in your community...</strong></li>
